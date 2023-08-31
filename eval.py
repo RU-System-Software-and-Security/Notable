@@ -32,8 +32,8 @@ model_name = "bert-base-uncased"
 
 import os
 
-model_path = os.path.join("/common/home/km1558/backdoor-prompt/output/pre-train", model_type,
-                          "pr_0.1/search_only/amazon-trigger-cf-p4/epoch-4")
+model_path = os.path.join("output/pre-train", model_type,
+                          "pr_0.1/search_only/amazon-trigger-cf-p4/epoch-4") # replace with your path
 
 # model_path = os.path.join("/common/home/km1558/prompt-universal-vulnerability/poisoned_lm")
 
@@ -72,7 +72,7 @@ trigger_positions = ["middle"]
 
 # processor = PROCESSORS[task](trigger, trigger_positions)
 
-dataset_dir = os.path.join("/data/local/mk/nlp_data/original", task)
+dataset_dir = os.path.join("data", task)
 
 
 def read_tsv(input_file):

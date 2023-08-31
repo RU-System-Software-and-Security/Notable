@@ -1,0 +1,10 @@
+numpy==1.19
+jsonpickle==1.1
+scikit-learn
+transformers
+tqdm==4.48.1
+spacy==2.2.0
+termcolor==1.1.0
+colorama==0.4.1
+matplotlib==3.1.1
+pandas==1.2.1
